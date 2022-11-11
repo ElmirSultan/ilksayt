@@ -7,11 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Elmir Sultan">
     <meta name="keywords" content="news">
+    <link rel="shortcut icon" href="./image/logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>DaySport.com</title>
 
     <style>
         header {
             background: black;
+        }
+
+        header :hover {
+            transition: 0.5s;
+            cursor: pointer;
         }
 
         body {
@@ -74,16 +83,73 @@
 
         }
 
-        .news{
+        .news {
             float: left;
         }
-        li.news1{
-          display: inline;
-          box-sizing: border-box;
-         margin-left: 50px;
-         margin-top: 30px;
-         margin-bottom: 30px;
-          
+
+        li.news1 {
+            display: inline;
+            box-sizing: border-box;
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+        footer{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;  
+        }
+        footer .social{
+            text-align: center;
+            padding-bottom: 25px;
+            color: aliceblue;
+            
+        }
+        footer .social a {
+            color: inherit;
+            font-size: 30px;
+            border: 1px solid white;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 8px;
+            opacity: 0.75;
+        }
+        footer .social a :hover{
+            opacity: 0.9;
+        }
+        footer ul{
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 18px;
+            line-height: 1.8px;
+            margin-bottom: 0;
+            text-align: center;
+            color: white;
+            
+        }
+        footer ul a{
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+        footer ul li{
+            display: inline-block;
+            padding: 0 15px;
+            text-align: center;
+        }
+        footer ul li a :hover{
+            opacity: 1;
+        }
+        footer .copyright{
+            margin-top: 15px;
+            text-align: center;
+            font-size: 13px;
+            color: #f2f2f2;
         }
     </style>
 </head>
@@ -107,17 +173,20 @@
     </nav>
 
     <ul class="news">
-        <li style="color:white ;" class="news1"><a href="https://edition.cnn.com/2022/10/17/football/manchester-united-ronaldo-problem-spt-intl/index.html"><img
+        <li style="color:white ;" class="news1"><a
+                href="https://edition.cnn.com/2022/10/17/football/manchester-united-ronaldo-problem-spt-intl/index.html"><img
                     src="https://media.newyorker.com/photos/61e87281b67066a13fd20ea8/3:4/w_1278,h_1704,c_limit/Caesar-Ronaldo.jpg"
                     width="300px" height="300px" alt="cr7"><br></a>Is Cristiano a problem for MU??</li>
 
         <li style="color:white ;" class="news1"><a href="https://www.espn.com/nba/player/_/id/3975/stephen-curry"><img
                     src="https://img.bleacherreport.net/img/images/photos/003/919/208/hi-res-8a79dfdb7bfbe2fc87ed58611fc1908b_crop_north.jpg?1638982501&w=3072&h=2048"
                     alt="steph" width="300px" height="300px"><br></a>Curry delivered another of memorable nights</li>
-        <li style="color:white ;" class="news1"><a href="https://www.nytimes.com/2022/09/15/sports/tennis/federer-retires-tennis.html"><img
+        <li style="color:white ;" class="news1"><a
+                href="https://www.nytimes.com/2022/09/15/sports/tennis/federer-retires-tennis.html"><img
                     src="https://img.bleacherreport.net/img/images/photos/003/875/482/hi-res-1d5a1ec4eb5852753d70a62c8d584f47_crop_north.jpg?1594250668&w=3072&h=2048"
                     alt="roge" width="300px" height="300px"><br></a>Roger Federer retired from Tennis</li>
-        <li style="color:white ;" class="news1"><a href="https://www.marca.com/en/ufc/2022/10/24/6356c03346163f70a48b456c.html"><img
+        <li style="color:white ;" class="news1"><a
+                href="https://www.marca.com/en/ufc/2022/10/24/6356c03346163f70a48b456c.html"><img
                     src="https://i.guim.co.uk/img/media/70ea14e390771096098593a2761cbc87032d2e6b/0_39_3531_2119/master/3531.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=0c16e230f912bcad3e013e33d300757f"
                     alt="conor" width="300px" height="300px"><br></a>When does Conor McGregor back to the UFC?</li>
         <li style="color:white ;" class="news1"><a href="https://wealthygorilla.com/magnus-carlsen-net-worth/"><img
@@ -128,6 +197,26 @@
                     width="300px" height="300px"><br></a>Turkey woman's voleyball national team 2022 full roster
         </li>
     </ul>
+
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Terms and Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            
+        </ul>
+
+        <p class="copyright"> Day Sport @ 2022</p>
+
+    </footer>
+
 </body>
 
 
